@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".patient.patient.finetuned_model.ChatpActivity">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_recycle_view_model"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout_model" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcome_text_model"
+        android:layout_centerInParent="true"
+        android:text="Welcome to our Trained Model\nTry it out now"
+        android:textColor="@color/bijcolor"
+        android:gravity="center"
+        android:textSize="16dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout_model"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/message_edit_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_chatdoctor"
+            android:hint="Write here"
+            android:padding="16dp" />
+        <ImageView
+            android:id="@+id/send_btn_model"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_noun_send_5718796" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

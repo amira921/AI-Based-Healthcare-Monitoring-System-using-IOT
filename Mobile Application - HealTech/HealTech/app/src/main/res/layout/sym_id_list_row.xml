@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp">
+        <!-- table values-->
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/id_value"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:padding="14sp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="1"
+                android:textColor="@color/bijcolor"
+                android:gravity="left" />
+            <TextView
+                android:id="@+id/name_value"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="5"
+                android:padding="12sp"
+                android:text="Hla"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/bijcolor"
+                android:gravity="left" />
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+</RelativeLayout>

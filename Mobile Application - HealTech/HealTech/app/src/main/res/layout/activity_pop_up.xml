@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signlogin.PopUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="250dp"
+            android:layout_marginStart="20dp">
+            <ImageView
+                android:id="@+id/patient_go"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/p1"
+                android:background="@drawable/hisshape"/>
+            <TextView
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Patient"
+                android:textColor="@color/bijcolor"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="250dp"
+            android:layout_marginStart="55dp">
+            <ImageView
+                android:id="@+id/doctor_go"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/d2"
+                android:background="@drawable/hisshape"/>
+            <TextView
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Doctor"
+                android:textColor="@color/bijcolor"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+<!--
+    <Button
+
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="138dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="313dp"
+        android:background="@drawable/d2"
+        android:fadingEdge="horizontal"
+        android:hint="."
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/transbarant"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/patient_go"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="217dp"
+        android:paddingEnd="10dp"
+        android:text=" Doctor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/doctor_go" />
+
+    <Button
+        android:id="@+id/patient_go"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="135dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="313dp"
+        android:background="@drawable/p1"
+        android:fadingEdge="horizontal"
+        android:hint="."
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/transbarant"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/doctor_go"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="217dp"
+        android:paddingEnd="10dp"
+        android:text=" Patient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_go" /> -->
+</android.support.constraint.ConstraintLayout>

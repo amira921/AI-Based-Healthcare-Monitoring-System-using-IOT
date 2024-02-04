@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-sdk android:minSdkVersion="XX" android:targetSdkVersion="YY"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo88"
+        android:label="HealTech"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App_Login"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <receiver android:name=".dbadema.DatabaseReceiver" />
+        <service android:name=".dbadema.DatabaseService" />
+        <activity
+            android:name=".doctor.doctor.FScheduleDoc.FinalScheduleDoc"
+            android:exported="false"
+            android:parentActivityName=".doctor.doctor.schedule.ScheduleActivity" />
+        <activity
+            android:name=".patient.patient.PatientHomeVitals.HomepActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.doctor.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".logo_page_open"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".signlogin.PopUp"
+            android:exported="false" />
+        <activity
+            android:name=".signlogin.D_Sign_Up"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.doctor.Symptomsdoctor.SymptomsDActivity"
+            android:exported="false"
+            android:parentActivityName=".doctor.doctor.SymIdTabel.PatientidSymActivity" />
+        <activity
+            android:name=".doctor.doctor.SymIdTabel.PatientidSymActivity"
+            android:exported="false"
+            android:parentActivityName=".doctor.doctor.HistoryAndSymptomsActivity" />
+        <activity
+            android:name=".doctor.doctor.HisTabelID.PatientidHActivity"
+            android:exported="false"
+            android:parentActivityName=".doctor.doctor.HistoryAndSymptomsActivity" />
+        <activity
+            android:name=".doctor.doctor.Historydoctor.HistoryDActivity"
+            android:exported="false"
+            android:parentActivityName=".doctor.doctor.HisTabelID.PatientidHActivity" />
+        <activity
+            android:name=".logosymptomsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".patient.patient.AccountinfopActivity"
+            android:exported="false"
+            android:parentActivityName=".patient.patient.PatientHomeVitals.HomepActivity" />
+        <activity
+            android:name=".patient.patient.MeetingpActivity"
+            android:exported="false"
+            android:parentActivityName=".patient.patient.PatientHomeVitals.HomepActivity" />
+        <activity
+            android:name=".patient.patient.SettingpActivity"
+            android:exported="false"
+            android:parentActivityName=".patient.patient.PatientHomeVitals.HomepActivity" />
+        <activity
+            android:name=".patient.patient.SymptomsActivity"
+            android:exported="false"
+            android:parentActivityName=".patient.patient.PatientHomeVitals.HomepActivity" />
+        <activity
+            android:name=".patient.patient.finetuned_model.ChatpActivity"
+            android:exported="false"
+            android:parentActivityName=".patient.patient.PatientHomeVitals.HomepActivity"/>
+        <activity
+            android:name=".patient.patient.HistoryOfVitalsPatient.HistorypActivity"
+            android:exported="false" />
+        <activity
+            android:name=".patient.patient.CalenderpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.doctor.FinalScheduleWithPName.FinalScheduleActivityWthPName"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.doctor.HistoryAndSymptomsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.doctor.schedule.DailyScheduleActivity"
+            android:exported="false"
+            android:parentActivityName=".doctor.doctor.schedule.ScheduleActivity" />
+        <activity
+            android:name=".doctor.doctor.schedule.WeekScheduleActivity"
+            android:exported="false"
+            android:parentActivityName=".doctor.doctor.schedule.ScheduleActivity" />
+        <activity
+            android:name=".doctor.doctor.VideoActivity"
+            android:exported="false"
+            android:parentActivityName=".doctor.doctor.HomeActivity" />
+        <activity
+            android:name=".patient.patient.MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctor.doctor.ProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".doctor.doctor.HomeActivity" />
+        <activity
+            android:name=".doctor.doctor.schedule.ScheduleActivity"
+            android:exported="false"
+            android:parentActivityName=".doctor.doctor.HomeActivity" />
+        <activity
+            android:name=".doctor.doctor.ChatGpt.ChatActivity"
+            android:exported="false"
+            android:parentActivityName=".doctor.doctor.HomeActivity" />
+        <activity
+            android:name=".signlogin.SignUp"
+            android:exported="false"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/Theme.App_Login.NoActionBar" />
+        <activity
+            android:name=".signlogin.NewPassword"
+            android:exported="false"
+            android:label="@string/title_activity_new_password"
+            android:theme="@style/Theme.App_Login.NoActionBar" />
+        <activity
+            android:name=".signlogin.Confirm_OTP"
+            android:exported="false"
+            android:label="@string/title_activity_confirm_otp"
+            android:theme="@style/Theme.App_Login.NoActionBar" />
+        <activity
+            android:name=".signlogin.F_P"
+            android:exported="false"
+            android:label="@string/title_activity_forgot_password"
+            android:theme="@style/Theme.App_Login.NoActionBar" />
+        <activity
+            android:name=".signlogin.MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
