@@ -1,0 +1,11 @@
+{
+  "bos_token": "<s>",
+  "eos_token": "</s>",
+  "model_max_length": 1024,
+  "name_or_path": "transformers/BioGPT-Large-QA",
+  "pad_token": "<pad>",
+  "sep_token": "</s>",
+  "special_tokens_map_file": null,
+  "tokenizer_class": "BioGptTokenizer",
+  "unk_token": "<unk>"
+}
