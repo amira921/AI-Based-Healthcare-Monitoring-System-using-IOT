@@ -63,11 +63,11 @@ headers = {"Authorization": "Bearer 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"}
 ## Smart Band and Mobile App Connection
 
 ## **Technologies Used**
-    - IDE: Android Studio
-    - Java
-    - MySQL
-    - 
-    - 
+- IDE: Android Studio
+- Java
+- MySQL
+- 
+- 
     
 <h1><b>2. Generative Question Answering Model - BioGPT</b></h1>
 
