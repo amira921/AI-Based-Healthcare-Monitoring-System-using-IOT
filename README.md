@@ -63,9 +63,9 @@ headers = {"Authorization": "Bearer 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"}
 ## Smart Band and Mobile App Connection
 
 ## **Technologies Used**
-    - 
-    - 
-    - 
+    - IDE: Android Studio
+    - Java
+    - MySQL
     - 
     - 
     
@@ -80,8 +80,8 @@ headers = {"Authorization": "Bearer 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"}
 - **Fine-Tuning:** Soft prompt in prefix Tuning
 - **Baselines:** Pretrained BioGPT and BioGPT large models without fine-tuning.
 - **Evaluation Metrics:**
-  * **Perplexity:**  measures how well a language model predicts a given sequence of tokens. Lower perplexity indicates better performance, as it suggests that the model is more confident in its predictions. Perplexity is commonly used for evaluating language models trained on large corpora.
-  * **Human Evaluation:** Human evaluation involves soliciting human judges to rate or rank the  quality of the generated text. This can be done using criteria such as fluency, coherence, relevance, and overall quality. Human evaluation provides valuable insights into the subjective aspects of text generation, which may not be fully captured by automated metrics.
+  * **Perplexity** 
+  * **Human Evaluation** 
 
     
 ## Dataset - PubMedQA
