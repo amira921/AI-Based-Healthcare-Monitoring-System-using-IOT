@@ -12,7 +12,7 @@ The Proposed Healthcare Monitoring System using IoT and NLP aims to create an in
         </thead>
         <tbody>
             <tr> 
-	<td><p align="center"><a href="https://drive.google.com/file/d/1kdU7k_f1Qpf6b6SIIQhLEyIwzcKT4Bn2/view?usp=drive_link"> <img src="https://github.com/amira921/AI-based-Healthcare-Monitoring-System-using-IoT/blob/main/assest/Demo%20cover.jpg" width="300px" heigth="200px"></a></p></td>
+	<td><p align="center"><a href="https://drive.google.com/file/d/1GRfaLCeAsJMBQkwHePhZAvHr6Ljq1OeW/view?usp=drive_link"> <img src="https://github.com/amira921/AI-based-Healthcare-Monitoring-System-using-IoT/blob/main/assest/Demo%20cover.jpg" width="300px" heigth="200px"></a></p></td>
 	<td><p align="center"><a href="https://docs.google.com/presentation/d/18zAe3_MNPJdM6uUCGvMFbxXZhz2Odt_T/edit?usp=drive_link&ouid=114624475064812527364&rtpof=true&sd=true"><img src="https://github.com/amira921/AI-based-Healthcare-Monitoring-System-using-IoT/blob/main/assest/PPT%20cover.PNG" width="700px" heigth="400px"></a></p></td>
 	<td><p align="center"><a href="https://docs.google.com/presentation/d/18zAe3_MNPJdM6uUCGvMFbxXZhz2Odt_T/edit?usp=drive_link&ouid=114624475064812527364&rtpof=true&sd=true"><img src="https://github.com/amira921/AI-based-Healthcare-Monitoring-System-using-IoT/blob/main/assest/Documentation%20cover.jpg" width="400px" heigth="400px"></a></p></td>
             </tr>
