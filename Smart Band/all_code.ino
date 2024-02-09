@@ -1,12 +1,30 @@
 #include <TouchScreen.h> // Touch library
 #include <LCDWIKI_GUI.h> // Core graphics library
 #include <LCDWIKI_KBV.h> // Hardware-specific library
+#include <ESP8266WiFi.h>
+#include <MySQL_Connection.h>
+#include <MySQL_Cursor.h>
+
+// Define WiFi credentials
+const char *ssid = "xxx";
+const char *password_wifi = "xxx";
+
+// Define MySQL connection parameters
+char *host = "xxx";
+char *user = "xxx";
+char *password = "xxx";
+char *db = "xxx";
+
+// MySQL connection object
+WiFiClient client;
+MySQL_Connection conn((Client *)&client);
+
 
 // Touchscreen pins
-#define YP A3 // Must be an analog pin, use "An" notation!
-#define XM A2 // Must be an analog pin, use "An" notation!
-#define YM 9  // Can be a digital pin
-#define XP 8  // Can be a digital pin
+#define YP A3 
+#define XM A2 
+#define YM 9  
+#define XP 8
 
 // LCD dimensions and pins
 LCDWIKI_KBV my_lcd(240, 320, A3, A2, A1, A0, A4); // Width, height, cs, cd, wr, rd, reset
@@ -66,10 +84,28 @@ void Navigation(int pagename);
 boolean is_pressed(int16_t x1, int16_t y1, int16_t x2, int16_t y2, int16_t px, int16_t py);
 char Read_Sensor1();
 char Read_Sensor2();
+void sendToMySQL(int value1, int value2, int value3);
+
 
 void setup() {
   Serial.begin(9600);
   my_lcd.Init_LCD();
+  
+  // Connect to WiFi
+  WiFi.begin(ssid, password_wifi);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    Serial.println("Connecting to WiFi..");
+  }
+  Serial.println("Connected to WiFi");
+
+  // Connect to MySQL
+  if (conn.connect(host, 3306, user, password, db)) {
+    Serial.println("Connected to MySQL server");
+  } else {
+    Serial.println("Connection to MySQL failed");
+  }
+
   Navigation(Welcome_Page);
 }
 
@@ -97,6 +133,13 @@ void loop() {
       }
     }
   }
+  // Read sensor values
+  int spo2 = digitalRead(12); 
+  int heart_rate = digitalRead(13); 
+  int temp = analogRead(A7); 
+
+  // Send sensors data to MySQL database
+  sendToMySQL(spo2, heart_rate, temp);
 }
 
 void welcome_page() {
@@ -232,4 +275,17 @@ char Read_Sensor2() {
       }
     }
   }
+}
+
+void sendToMySQL(int temp, int spo2, int heart_rate) {
+  char query[128];
+  MySQL_Cursor *cur_mem = new MySQL_Cursor(&conn);
+
+  // Compose the MySQL query
+  sprintf(query, "INSERT INTO patient_vitals (temperature, heart_rate, oxygen) VALUES (%d, %d, %d)", temp, heart_rate, oxygen);
+
+  // Execute the query
+  cur_mem->execute(query);
+
+  delete cur_mem;
 }
