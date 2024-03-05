@@ -1,25 +1,12 @@
--- phpMyAdmin SQL Dump
--- version 5.2.0
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Feb 04, 2024 at 07:27 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
--- Database: `dpuphysical`
+-- Database: `HealTech`
 --
+CREATE DATABASE IF NOT EXISTS `HealTech` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `HealTech`;
 
 -- --------------------------------------------------------
 
@@ -35,7 +22,7 @@ CREATE TABLE `doctor_users` (
   `password` varchar(200) NOT NULL,
   `medical_id` varchar(6) NOT NULL,
   `hospital_clinic_id` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `doctor_users`
@@ -67,7 +54,7 @@ CREATE TABLE `hospital_clinicals` (
   `city` varchar(50) NOT NULL,
   `street` varchar(250) NOT NULL,
   `country` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `hospital_clinicals`
@@ -93,7 +80,7 @@ CREATE TABLE `patient_appoin` (
   `work_days_date` date NOT NULL,
   `work_hours_time` time NOT NULL,
   `doctor_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -106,7 +93,7 @@ CREATE TABLE `patient_phone_table` (
   `patient_phone` varchar(11) NOT NULL,
   `relative_phone` varchar(11) NOT NULL,
   `patient_id` varchar(14) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -119,7 +106,7 @@ CREATE TABLE `patient_time` (
   `patient_id` varchar(14) NOT NULL,
   `doctor_id` int(11) NOT NULL,
   `work_days_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `patient_time`
@@ -154,7 +141,7 @@ CREATE TABLE `patient_users` (
   `liver` varchar(1) NOT NULL,
   `diabetes` varchar(1) NOT NULL,
   `doctor_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `patient_users`
@@ -186,7 +173,7 @@ CREATE TABLE `patient_vitals` (
   `date` date NOT NULL,
   `time` time NOT NULL,
   `ID` varchar(14) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `patient_vitals`
@@ -239,7 +226,7 @@ CREATE TABLE `symptoms` (
   `skin_irritation` tinyint(1) NOT NULL,
   `date` date NOT NULL,
   `patient_id` varchar(14) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `symptoms`
@@ -260,52 +247,6 @@ INSERT INTO `symptoms` (`id`, `stomach_ulcer`, `heart_burn`, `vomiting`, `nausea
 (13, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, '2024-02-02', '02369874521478'),
 (14, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, '2024-02-03', '12398745636985'),
 (15, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, '2024-02-04', '02369874521478');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `work_days`
---
-
-CREATE TABLE `work_days` (
-  `id` int(11) NOT NULL,
-  `days` varchar(11) NOT NULL,
-  `date` date NOT NULL,
-  `time` time NOT NULL,
-  `doctor_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `work_days`
---
-
-INSERT INTO `work_days` (`id`, `days`, `date`, `time`, `doctor_id`) VALUES
-(161, 'Monday', '2023-02-03', '24:00:00', 1),
-(162, 'Monday', '2023-02-03', '24:00:00', 1),
-(163, 'Monday', '2023-02-03', '24:00:00', 1),
-(164, 'Thursday', '2023-07-13', '08:00:00', 1),
-(165, 'Thursday', '2023-07-13', '09:00:00', 1),
-(166, 'Thursday', '2023-07-13', '10:00:00', 1),
-(167, 'Wednesday', '2023-06-14', '11:00:00', 1),
-(169, 'Wednesday', '2023-06-21', '08:00:00', 15),
-(170, 'Wednesday', '2023-06-21', '11:00:00', 15),
-(171, 'Wednesday', '2023-06-21', '15:00:00', 15),
-(172, 'Friday', '2023-06-09', '08:00:00', 15),
-(173, 'Friday', '2023-06-09', '12:00:00', 15),
-(174, 'Friday', '2023-06-09', '16:00:00', 15),
-(175, 'Friday', '2023-06-16', '13:00:00', 15),
-(176, 'Friday', '2023-06-16', '16:00:00', 15),
-(177, 'Friday', '2023-06-23', '09:00:00', 15),
-(178, 'Friday', '2023-06-23', '16:00:00', 15),
-(188, 'Tuesday', '2023-06-27', '08:00:00', 16),
-(189, 'Tuesday', '2023-06-27', '11:00:00', 16),
-(191, 'Thursday', '2023-06-29', '19:00:00', 16),
-(192, 'Thursday', '2023-06-29', '20:00:00', 16),
-(193, 'Thursday', '2023-06-29', '21:00:00', 16),
-(194, 'Thursday', '2024-02-01', '12:00:00', 16),
-(195, 'Thursday', '2024-02-01', '15:00:00', 16),
-(196, 'Thursday', '2024-02-01', '17:00:00', 16),
-(197, 'Thursday', '2024-02-01', '19:00:00', 16);
 
 --
 -- Indexes for dumped tables
@@ -383,15 +324,6 @@ ALTER TABLE `symptoms`
   ADD KEY `symptoms_ibfk_1` (`patient_id`);
 
 --
--- Indexes for table `work_days`
---
-ALTER TABLE `work_days`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `doctor-id` (`doctor_id`),
-  ADD KEY `days` (`days`),
-  ADD KEY `date` (`date`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -438,12 +370,6 @@ ALTER TABLE `symptoms`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT for table `work_days`
---
-ALTER TABLE `work_days`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=199;
-
---
 -- Constraints for dumped tables
 --
 
@@ -457,18 +383,19 @@ ALTER TABLE `doctor_users`
 -- Constraints for table `patient_appoin`
 --
 ALTER TABLE `patient_appoin`
-  ADD CONSTRAINT `patient_appoin_ibfk_1` FOREIGN KEY (`frist_name`) REFERENCES `patient_users` (`first_name`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `patient_appoin_ibfk_2` FOREIGN KEY (`second_name`) REFERENCES `patient_users` (`second_name`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `patient_appoin_ibfk_4` FOREIGN KEY (`work_days_date`) REFERENCES `work_days` (`date`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `patient_appoin_ibfk_5` FOREIGN KEY (`work_hours_time`) REFERENCES `work_hours` (`time`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `patient_appoin_ibfk_6` FOREIGN KEY (`doctor_id`) REFERENCES `doctor_users` (`doctor_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `patient_appoin_ibfk_1` FOREIGN KEY (`doctor_id`) REFERENCES `doctor_users` (`doctor_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `patient_phone_table`
+--
+ALTER TABLE `patient_phone_table`
+  ADD CONSTRAINT `patient_phone_table_ibfk_1` FOREIGN KEY (`patient_id`) REFERENCES `patient_users` (`national_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `patient_time`
 --
 ALTER TABLE `patient_time`
-  ADD CONSTRAINT `patient_time_ibfk_1` FOREIGN KEY (`doctor_id`) REFERENCES `doctor_users` (`doctor_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `patient_time_ibfk_2` FOREIGN KEY (`work_days_id`) REFERENCES `work_days` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `patient_time_ibfk_1` FOREIGN KEY (`patient_id`) REFERENCES `patient_users` (`national_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `patient_users`
@@ -480,15 +407,11 @@ ALTER TABLE `patient_users`
 -- Constraints for table `patient_vitals`
 --
 ALTER TABLE `patient_vitals`
-  ADD CONSTRAINT `patient_vitals_ibfk_1` FOREIGN KEY (`ID`) REFERENCES `patient_users` (`national_id`);
+  ADD CONSTRAINT `patient_vitals_ibfk_1` FOREIGN KEY (`ID`) REFERENCES `patient_users` (`national_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `work_days`
+-- Constraints for table `symptoms`
 --
-ALTER TABLE `work_days`
-  ADD CONSTRAINT `work_days_ibfk_1` FOREIGN KEY (`doctor_id`) REFERENCES `doctor_users` (`doctor_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `symptoms`
+  ADD CONSTRAINT `symptoms_ibfk_1` FOREIGN KEY (`patient_id`) REFERENCES `patient_users` (`national_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
