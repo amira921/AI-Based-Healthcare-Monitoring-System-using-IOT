@@ -20,7 +20,8 @@ The Proposed Healthcare Monitoring System using IoT and NLP aims to create an in
 
 <br><br>
 
-<h1>Project Contribution in Competitions</h1>
+<h2>Graduation Project Score: [99:100] - [A+]</h2>
+<h2>Project Contribution in Competitions</h2>
 
 - **Dell Technologies' Envision the Future Competition**: emerged as semifinalists out of 283 global project teams in the Dell Technologies' Envision the Future Competition held in 2023
 - **Egypt IoT & AI Challenge** : Participated with graduation project, sponsored with resources, financial support, and technical assistance.
