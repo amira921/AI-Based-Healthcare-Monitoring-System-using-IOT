@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".patient.patient.PatientHomeVitals.HomepActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="357dp">
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/custom_bg_layout"/>
+
+        <ListView
+            android:id="@+id/Home_Patient_Vitals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="15dp"
+            app:cardCornerRadius="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            tools:ignore="Orientation" />
+
+
+
+
+
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="19dp"
+            android:layout_height="203dp"
+            android:layout_above="@+id/bottomNavigationp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="315dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginBottom="63dp"
+            android:src="@drawable/ic_add"
+            app:fab_addButtonColorNormal="@color/Teal3"
+            app:fab_addButtonColorPressed="#d1c0ab"
+            app:fab_addButtonPlusIconColor="#ffff"
+            app:fab_labelStyle="@style/floatingbuttonpatient">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingsymptomsbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="mini"
+                app:fab_colorNormal="@color/Teal3"
+                app:fab_colorPressed="@color/bijcolor"
+                app:fab_icon="@drawable/ic_symptoms1" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:id="@+id/bottomNavigationp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:mbn_backgroundBottomColor="#446b6d"
+            app:mbn_circleColor="#ffffff"
+            app:mbn_countBackgroundColor="#ff6f00"
+            app:mbn_countTextColor="#ffffff"
+            app:mbn_defaultIconColor="#90a4ae"
+            app:mbn_rippleColor="#2f424242"
+            app:mbn_selectedIconColor="#d1c0ab"
+            app:mbn_shadowColor="#1f212121" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_patient" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

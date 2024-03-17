@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctor.doctor.FinalScheduleWithPName.FinalScheduleActivityWthPName"
+    android:background="@color/gray">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/tableL_finalschedule"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <!-- Table heading-->
+
+            <TableRow
+                android:background="@drawable/table_shape">
+                <TextView
+                    android:id="@+id/day_symtoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:padding="14sp"
+                    android:text="Day"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:id="@+id/date_symtoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:padding="14sp"
+                    android:text="Date"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:id="@+id/hours_symtoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:padding="14sp"
+                    android:text="Hours"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:id="@+id/patient_name_symtoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="14sp"
+                    android:text="Patient"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal" />
+            </TableRow>
+
+            <ListView
+                android:id="@+id/listtable_final_schedule"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableL_finalschedule"  />
+        </TableLayout>
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+
+    <!-- bottom view with floating button-->
+    <android.support.design.bottomappbar.BottomAppBar
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/bottomAppBar"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="60dp"
+        android:background="@color/white"
+        >
+
+        <android.support.design.widget.BottomNavigationView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomNavigationView"
+            android:layout_marginEnd="0dp"
+            android:layout_marginLeft= "0dp"
+            android:background="@drawable/transparent_background"
+            app:menu="@menu/bottom_nav_menu"
+
+
+            />
+
+    </android.support.design.bottomappbar.BottomAppBar>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#d1c0ab"
+        android:backgroundTint="@color/Teal2"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="#d1c0ab"
+        app:layout_anchor="@id/bottomAppBar"
+        app:tint="#ffff" />
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+

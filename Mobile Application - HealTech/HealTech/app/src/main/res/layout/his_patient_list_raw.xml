@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/symshape3"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:id="@+id/p_date_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2024-08-09"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/bijcolor"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/p_time_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05:00"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/bijcolor"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/symshape2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="147dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="Temprature"
+                            android:textColor="@color/bijcolor"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="15dp"
+                            android:background="@drawable/symshape">
+                            <TextView
+                                android:id="@+id/p_temperature_value"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="39"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/bijcolor"
+                                android:gravity="center_horizontal" />
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="95dp"
+                                android:src="@drawable/temperature" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="147dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="Pressure"
+                            android:textColor="@color/bijcolor"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="15dp"
+                            android:background="@drawable/symshape">
+                            <TextView
+                                android:id="@+id/p_bloodpressure_value"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="100"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/bijcolor"
+                                android:gravity="center_horizontal" />
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginStart="95dp"
+                                android:src="@drawable/blood_pressure_card" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="147dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="Heart-rate"
+                            android:textColor="@color/bijcolor"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="15dp"
+                            android:background="@drawable/symshape">
+                            <TextView
+                                android:id="@+id/p_heartrate_value"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="90"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/bijcolor"
+                                android:gravity="center_horizontal" />
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginStart="95dp"
+                                android:src="@drawable/heart" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="147dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="Oxgen"
+                            android:textColor="@color/bijcolor"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="15dp"
+                            android:background="@drawable/symshape">
+
+                            <TextView
+                                android:id="@+id/p_oxygen_value"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:gravity="center_horizontal"
+                                android:text="90%"
+                                android:textColor="@color/bijcolor"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                            <ImageView
+                                android:layout_width="55dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginStart="95dp"
+                                android:src="@drawable/oxygen_saturation_card" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <!--
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+            <TableRow
+                android:layout_marginStart="5dp">
+                <TextView
+                    android:id="@+id/temp"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:gravity="center_horizontal"
+                    android:text="90"
+                    android:textColor="@color/bijcolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/press"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:gravity="center_horizontal"
+                    android:text="90"
+                    android:textColor="@color/bijcolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/oxgen"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="5sp"
+                    android:text="90"
+                    android:textColor="@color/bijcolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/hrate"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:gravity="center_horizontal"
+                    android:text="90"
+                    android:textColor="@color/bijcolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/htime"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:gravity="center_horizontal"
+                    android:text="90"
+                    android:textColor="@color/bijcolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/hdate"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:gravity="center_horizontal"
+                    android:text="90"
+                    android:textColor="@color/bijcolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+    </HorizontalScrollView> -->
+
+
+</LinearLayout>
+
+

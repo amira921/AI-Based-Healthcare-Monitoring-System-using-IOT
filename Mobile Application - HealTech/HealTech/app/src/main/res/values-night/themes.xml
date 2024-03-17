@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.App_Login" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#d1c0ab</item> //color of title
+        <item name="colorPrimaryDark">#BFBFBF</item> // color above title
+        <item name="colorAccent">#446b6d</item> // select text
+
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signlogin.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="238dp"
+        android:layout_height="215dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/password_" />
+
+    <Button
+        android:id="@+id/Submit_OTP_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/my_button"
+        android:fadingEdge="horizontal"
+        android:text="confirm"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/N3_OTP" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="372dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="A 4-digit code has been sent in your notifications. Please enter it."
+        android:textColor="#446b6d"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login_Titlee" />
+
+
+    <EditText
+        android:id="@+id/N1_OTP"
+        android:layout_width="79dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/my_edit_text"
+        android:ems="10"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:inputType="number"
+        android:padding="5dip"
+        android:textAlignment="center"
+        android:textColor="#446b6d"
+        android:textColorHint="#00FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/Submit_OTP_btn"
+        app:layout_constraintEnd_toStartOf="@+id/N2_OTP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/N2_OTP"
+        android:layout_width="79dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/my_edit_text"
+        android:ems="10"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:inputType="number"
+        android:padding="5dip"
+        android:textAlignment="center"
+        android:textColor="#446b6d"
+        android:textColorHint="#00FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/Submit_OTP_btn"
+        app:layout_constraintEnd_toStartOf="@+id/N3_OTP"
+        app:layout_constraintStart_toEndOf="@+id/N1_OTP"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/N3_OTP"
+        android:layout_width="79dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/my_edit_text"
+        android:ems="10"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:inputType="number"
+        android:padding="5dip"
+        android:textAlignment="center"
+        android:textColor="#446b6d"
+        android:textColorHint="#00FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/Submit_OTP_btn"
+        app:layout_constraintEnd_toStartOf="@+id/N4_OTP"
+        app:layout_constraintStart_toEndOf="@+id/N2_OTP"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/N4_OTP"
+        android:layout_width="79dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/my_edit_text"
+        android:ems="10"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:inputType="number"
+        android:padding="5dip"
+        android:textAlignment="center"
+        android:textColor="#446b6d"
+        android:textColorHint="#00FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/Submit_OTP_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/N3_OTP"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Login_Titlee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginBottom="17dp"
+        android:text="Enter OTP"
+        android:textColor="@color/Teal"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+</android.support.constraint.ConstraintLayout>
