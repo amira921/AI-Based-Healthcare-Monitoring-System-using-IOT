@@ -9,12 +9,15 @@ The Proposed Healthcare Monitoring System using IoT and NLP aims to create an in
             <tr>
                 <th><a href="https://drive.google.com/file/d/1GRfaLCeAsJMBQkwHePhZAvHr6Ljq1OeW/view?usp=drive_link">Demo</a></th>
                 <th><a href="https://docs.google.com/presentation/d/18zAe3_MNPJdM6uUCGvMFbxXZhz2Odt_T/edit?usp=drive_link&ouid=114624475064812527364&rtpof=true&sd=true">Presentation</a></th>
-	              <th><a href="https://drive.google.com/file/d/14x3edUedBytt35yfrUp2QAgusT6gIsQ1/view?usp=sharing">Documentation</a></th>
+	        <th><a href="https://drive.google.com/file/d/14x3edUedBytt35yfrUp2QAgusT6gIsQ1/view?usp=sharing">Documentation</a></th>
             </tr>
         </thead>
-        <tbody>
-          <tr></tr>
-          <tr></tr>
+        <tbody>	
+          <tr>
+		  <th></th>
+		  <th></th>
+		  <th></th>
+	  </tr>
         </tbody>
     </table>
 
@@ -122,7 +125,7 @@ headers = {"Authorization": "Bearer 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"}
 ## Dataset - PubMedQA
 > PubMedQA _ Closed-domain question answering given PubMed abstract: the dataset contains questions on biomedical research that cover a wide range of biomedical topics, including diseases, treatments, genes, proteins, and more. PubMedQA is one of the MultiMedQA datasets (A benchmark for medical question answering). PubMedQA consists of 1k expert labeled, 61.2k unlabeled, and 211.3k artificially generated QA instances with yes/no/maybe multiple-choice answers and long answers given a question together with a PubMed abstract as context.                                 
 
-<p align="center"><img src="https://github.com/amira921/AI-based-Healthcare-Monitoring-System-using-IoT/blob/main/assest/dataset%20usage.png" width="300"></p>
+<p align="center"><img src="https://github.com/amira921/AI-Based-Healthcare-Monitoring-System-using-IOT/blob/main/asset/dataset%20usage.png" width="300"></p>
 
 ## Pretrained Model - BioGPT
    
@@ -130,12 +133,12 @@ headers = {"Authorization": "Bearer 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"}
 BioGPT is a type of generative language model, which is trained on millions of biomedical research articles that have already been published. This essentially means that BioGPT can use this information to perform other tasks like answering questions, extracting relevant data, and generating text relevant to biomedical. <br><br>
 The researchers used GPT-2 XL as the primary model and trained it on 15 million PubMed abstracts before using it in the real world. GPT-2 XL is a Transformer decoder that has 48 layers, 1600 hidden sizes and 25 attention heads resulting in 1.5B parameters in total.
 
-<p align="center"><img src="https://github.com/amira921/AI-based-Healthcare-Monitoring-System-using-IoT/blob/main/assest/model%20architecture.png" width="400px" heigth="300px"></p>
+<p align="center"><img src="https://github.com/amira921/AI-Based-Healthcare-Monitoring-System-using-IOT/blob/main/asset/model%20architecture.png" width="400px" heigth="300px"></p>
 
 ## Prefix Tuning with Peft and LoRA
 > Fine-Tuning Setup: we performed soft prompt in prefix tuning technique on the BioGPT large **1.5B** model. The virtual tokens length was set to **10**, allowing us to focus on a specific context within the input sequence. By freezing the remaining parts of the model, we limited the number of trainable parameters to **1.5 million**. During the training process, we utilized a **TPU VM v3-8** with a batch size of **8** and num_warmup_steps = **1000** and gradient_accumulation_steps = **4** and weight_decay= **0.1**,this enabled us to execute the training procedure over **24** steps, with each step involving the processing of **1024** tokens. The Adam optimizer was employed, utilizing a peak learning rate of **1×10−5** to optimize the model's performance over the course of **3** epochs.
 
-<p align="center"><img src="https://github.com/amira921/AI-based-Healthcare-Monitoring-System-using-IoT/blob/main/assest/finetuned%20model.png" width="400px" heigth="500px"></p>
+<p align="center"><img src="https://github.com/amira921/AI-Based-Healthcare-Monitoring-System-using-IOT/blob/main/asset/finetuned%20model.png" width="400px" heigth="500px"></p>
 
 ## Model Deployment 
 
@@ -161,12 +164,10 @@ headers = {"Authorization": "Bearer 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"}
 - IDE: Kaggle Notebook
 - HuggingFace Hub
 
-<p align="center"> <a href ="https://github.com/amira921/AI-based-Healthcare-Monitoring-System-using-IoT/blob/main/ChatBot-Generative%20QA%20System/Proposed%20Paper.pdf"> Check our Paper for more Details</a></p>
-
 <h1><b>3. Smart Band</b></h1>
 The smart band is a wireless device equipped with sensors to measure vital signs such as temperature, oxygen levels, blood pressure, and heart rate. These measurements are transmitted to a central database for further processing and analysis. The smart band plays a critical role in collecting real-time health data, which is essential for accurate monitoring and diagnosis.
 
-<p align="center"> <img src="https://github.com/amira921/AI-based-Healthcare-Monitoring-System-using-IoT/blob/main/assest/smart%20band%20prototype.jpg" heigth="300px" width="800px"> </p>
+<p align="center"> <img src="https://github.com/amira921/AI-Based-Healthcare-Monitoring-System-using-IOT/blob/main/asset/smart%20band%20prototype.png" heigth="300px" width="800px"> </p>
 
 ## **Technologies Used**
 ### Hardware
@@ -192,4 +193,4 @@ The smart band is a wireless device equipped with sensors to measure vital signs
 ## Connection with Mobile App
 The MicroController(Arduino Nano) sends vital signs to our database using the Wi-Fi module ESP8266, then the mobile application fetches the data from the database.
 
-<p align="center"><img src="https://github.com/amira921/AI-based-Healthcare-Monitoring-System-using-IoT/blob/main/assest/smart%20band%20architecture.png" width="500px" heigth="400px"> </p>
+<p align="center"><img src="https://github.com/amira921/AI-Based-Healthcare-Monitoring-System-using-IOT/blob/main/asset/smart%20band%20architecture.png" width="500px" heigth="400px"> </p>
