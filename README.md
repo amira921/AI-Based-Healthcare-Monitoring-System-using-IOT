@@ -68,6 +68,7 @@ API_URL = "https://api-inference.huggingface.co/models/Amira2045/BioGPT-Finetune
 headers = {"Authorization": "Bearer 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"}
 ```
 ## Smart Band and Mobile App Connection
+The MicroController(Arduino Nano) sends vital signs to our database using the Wi-Fi module ESP8266, then the mobile application fetches the data from the database.
 
 ## **Technologies Used**
 - IDE: Android Studio
