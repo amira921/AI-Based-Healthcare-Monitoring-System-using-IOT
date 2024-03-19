@@ -9,7 +9,7 @@ The Proposed Healthcare Monitoring System using IoT and NLP aims to create an in
             <tr>
                 <th><a href="https://drive.google.com/file/d/1GRfaLCeAsJMBQkwHePhZAvHr6Ljq1OeW/view?usp=drive_link">Demo</a></th>
                 <th><a href="https://docs.google.com/presentation/d/18zAe3_MNPJdM6uUCGvMFbxXZhz2Odt_T/edit?usp=drive_link&ouid=114624475064812527364&rtpof=true&sd=true">Presentation</a></th>
-	        <th><a href="https://drive.google.com/file/d/14x3edUedBytt35yfrUp2QAgusT6gIsQ1/view?usp=sharing">Documentation</a></th>
+	        <th><a href="https://drive.google.com/file/d/1GA1bQ7K87cK8OggOx5D8kK0w2PBpX519/view?usp=drive_link">Documentation</a></th>
             </tr>
         </thead>
         <tbody>	
