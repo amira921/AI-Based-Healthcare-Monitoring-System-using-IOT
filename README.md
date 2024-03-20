@@ -50,6 +50,9 @@ The Proposed Healthcare Monitoring System using IoT and NLP aims to create an in
 
 <h2><b>Doctor Portal - Features</b></h2>
 
+- **Complete Medical History** \
+ for each patient assigned, a comprehensive medical history stored , including previous diagnoses, treatments, and prescribed medications. It also incorporates the 
+patient's vital signs collected by the smart band, facilitating a holistic view of the patient's health.
 - **Schedule Meeting**\
   Doctors can manage their schedules and availability for appointments and meetings with patients 
 - **Meetings with Patients** \
